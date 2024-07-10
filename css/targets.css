@@ -1,0 +1,189 @@
+.target{
+	position: absolute;
+	padding: 0;
+	width: 24%;
+	margin-top: 5px;
+}
+.target .face{
+	position: absolute;
+	backface-visibility: hidden;
+	overflow: hidden;
+	transition: 1s;
+	padding: 3px;
+}
+.target .front{
+	transform: perspective(600px) rotateY(0deg);
+	height: 290px;
+	width: 300%;
+}
+.target .back{
+	transform: perspective(600px) rotateY(180deg);
+	justify-content: space-between;
+	height: 290px;
+	width: 300%;
+	font-family: Book Antiqua;
+}
+.target .face{
+	width: 100%;
+}
+.target.tdah{
+	position: relative;
+	margin-left: 60%;
+}
+.target.tdah .back{
+	background-color: rgba(173, 216, 230, 0.8);
+	border: solid 1px darkblue;
+}
+.target.tdah h3{
+	color: darkblue;
+}
+.target.caracteristicas{
+	position: relative;
+	top: 300px;
+	margin-left: 40%;
+}
+.target.caracteristicas .back{
+	background-color: rgba(253, 245, 230, 1.0);
+	border: solid 1px orangered;
+}
+.target.caracteristicas h3{
+	color: orangered;
+}
+.target.caracteristicas a{
+	color: orangered;
+	padding-left: 30px;
+}
+.target.tratamiento{
+	position: relative;
+	top: 300px;
+	margin-left: 70%;
+}
+.target.tratamiento .back{
+	background-color: rgba(152, 251, 152, 1.0);
+	border: solid 1px darkgreen;
+}
+.target.tratamiento h3{
+	color: darkgreen;
+}
+.target.tratamiento a{
+	color: darkgreen;
+	padding-left: 30px;
+}
+.target.causas{
+	position: relative;
+	top: 300px;
+	margin-left: 10%;
+}
+.target.causas .back{
+	background-color: rgba(255, 182, 193,1.0);
+	border: solid 1px deeppink;
+}
+.target.causas h3{
+	color: deeppink;
+}
+.target.causas a{
+	color: deeppink;
+	padding-left: 30px;
+}
+.nosotros h3{
+	color: azure;
+	font-family: impact;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 35%;
+}
+.target.somos{
+	position: relative;
+	top: 1px;
+	margin-left: 0%;
+}
+.nosotros .front{
+  	background-color: cornflowerblue;
+  	border-radius: 20px;
+}
+.target.somos .back{
+	background-color: rgba(255, 182, 193,0.8);
+	border: solid 1px deeppink;
+}
+.target.mision{
+	position: relative;
+	margin-left: 25%;
+}
+.target.mision .back{
+	background-color: rgba(173, 216, 230, 0.8);
+	border: solid 1px darkblue;
+}
+.target.vision{
+	position: relative;
+	top: 200px;
+	margin-left: 50%;
+}
+.target.vision .back{
+	background-color: rgba(253, 245, 230, 0.8);
+	border: solid 1px orangered;
+}
+.target.objetivo{
+	position: relative;
+	top: 200px;
+	margin-left: 75%;
+}
+.target.objetivo .back{
+	background-color: rgba(152, 251, 152, 0.8);
+	border: solid 1px darkgreen;
+}
+
+.face.front img{
+	width: 99%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.face.front h6{
+	position: relative;
+	top: -30px;
+	text-align: center;
+	font-family: impact;
+}
+.face.back{
+	border-radius: 20px;
+}
+.face.back ul{
+	list-style: circle;
+	color: black;
+}
+.face.back ul li{
+	padding-bottom: 10px;
+}
+.face.back h3{
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+	font-family: Comic Sans MS;
+}
+.face.back p{
+	text-align: justify;
+	margin-top: 30px;
+	padding: 10px;
+	color: black;
+}
+.target.caracteristicas:hover .front,.target.causas:hover .front,.target.tratamiento:hover .front{
+	transform: perspective(600px) rotateY(180deg);
+}
+.target.caracteristicas:hover .back,.target.causas:hover .back,.target.tratamiento:hover .back{
+	transform: perspective(600px) rotateY(360deg);
+}
+
+.target.somos:hover .front,.target.mision:hover .front,.target.vision:hover .front,.target.objetivo:hover .front{
+	transform: perspective(600px) rotateY(-330deg);
+}
+.target.somos:hover .back,.target.mision:hover .back,.target.vision:hover .back,.target.objetivo:hover .back{
+	transform: perspective(600px) rotateY(360deg);
+}
+
+.target.tdah:hover .front{
+	transform: perspective(600px) rotateY(40deg);
+}
+.target.tdah:hover .back{
+	transform: perspective(600px) rotateY(360deg);
+	margin-left: 150px;
+}

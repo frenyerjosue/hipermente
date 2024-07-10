@@ -1,0 +1,415 @@
+.color{
+	justify-self: center;
+	align-items: center;
+}
+.one{
+	background-image: linear-gradient(to right,lightpink,bisque,antiquewhite,peachpuff,lightpink);
+}
+.two{
+	background-image: linear-gradient(to right,lightblue,lightcyan,lightcyan,honeydew,lightblue);
+}
+.inicio{
+	background-color: transparent;
+}
+/*version movil*/
+@media (max-width: 945px) {
+    .escritorio {
+        display: none;
+    }
+    .down{
+    	display: none;
+    }
+    .movil{
+		display:inline-flex;
+		background-color: rgba(255, 165, 0, 0.9);
+		border-radius: 50px;
+		height: 60px;
+		width: 99%;
+		color: darkblue;
+		position: absolute;
+	}
+	.movil label{
+		color: orangered;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.movil .logo{
+		object-fit: cover; 
+		padding: 5px;
+		background-image: linear-gradient(to top,mistyrose,ghostwhite,mistyrose);
+		border: solid 1px orangered;
+		border-radius: 50px 0 0 50px;
+		position: relative;
+		height: 80%;
+		width: 80px;
+	}
+	.movil .titulo{
+		font-family: Comic Sans MS;
+		position: relative;
+		text-align: center;
+		margin: 0% auto;
+		right: 50px;
+		width: 20%;
+		height: 99%;
+		font-size: 99% auto;
+	}
+	.movil-down{
+		display:inline-flex;
+		background-color: rgba(255, 165, 0, 0.9);
+		border-radius: 50px;
+		height: 60px;
+		width: 99%;
+		color: darkblue;
+		position: fixed;
+		top: 2px;
+		z-index: 2;
+	}
+	.movil-down .logo{
+		object-fit: cover; 
+		padding: 5px;
+		background-image: linear-gradient(to top,mistyrose,ghostwhite,mistyrose);
+		border: solid 1px orangered;
+		border-radius: 50px 0 0 50px;
+		position: absolute;
+		height: 80%;
+		width: 80px;
+	}
+	.movil-down .titulo{
+		font-family: Comic Sans MS;
+		position: relative;
+		text-align: center;
+		margin: 0% auto;
+		right: 20px;
+		top: 15px;
+		width: 20%;
+		height: 99%;
+		font-size: 99% auto;
+	}
+	.movil-down .titulo h3{
+		margin: 0;
+	}
+	.dropdown-t{
+		display: inline-flex;
+		position: absolute;
+		right: 20px;
+	}
+	.menu-movil{
+		height: 99%;
+		width: 50px;
+	}
+	/*Botón Submenú*/
+	.drop-button{
+		background: transparent;
+		height: 100%;
+		border: none;
+		cursor: pointer;
+		margin: 0%;
+	}
+	/*Botón hover y focus*/
+	.drop-button:hover, drop-buttton:hover{
+		background-color: rgba(255, 69, 0, 0.8);
+	}
+	/*Posición del contenedor*/
+	.dropdown-tb{
+		position: relative;
+		display: inline-block;
+	 }
+	/*submenu*/
+	.dropdown-content-t{
+		display: none;
+		position: absolute;
+		right: 10px;
+		min-width: 100px;
+		background: rgba(250, 235, 215, 0.7);
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 2;
+	}
+	.dropdown-content-t a{
+		color: orangered;
+		text-decoration: none;
+		padding: 12px 16px;
+		display: block;
+	}
+	.dropdown-content-t a:hover{
+		background-color: white;
+		color: darkblue;
+	}
+	.show {
+		display: block;
+	}
+}
+/*version escritorio*/
+@media (min-width: 946px) {
+    .movil {
+        display: none;
+    }
+    .movil-down{
+    	display: none;
+    }
+ 	.escritorio{
+		display:flex;
+		background-color: rgba(255, 165, 0, 0.9);
+		border-radius: 50px;
+		height: 110px;
+		width: 99%;
+		color: lightyellow;
+		position: absolute;
+		text-align: center;
+	}
+	.escritorio label{
+		color: orangered;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.escritorio .menu{
+		background-color: oldlace;
+		border: solid 1px orange;
+		border-radius: 0 100px 0 100px;
+		width: 45%;
+		position: relative;
+		right: 50px;
+	}
+	.escritorio .menu ul li a:hover{
+		background-color: white;
+		color: darkblue;
+		border-radius: 0 20px 0 20px;
+		padding: 6px;
+	}
+	.escritorio .logo{
+		object-fit: cover; 
+		padding: 5px;
+		background-image: linear-gradient(to top,mistyrose,ghostwhite,mistyrose);
+		border: solid 1px orangered;
+		border-radius: 50px 0 0 50px;
+		position: relative;
+		height: 89%;
+		width: 150px;
+	}
+	.escritorio .titulo{
+		margin: 0 100px 0 100px;
+		font-family: Comic Sans MS;
+		position: relative;
+		width: 20%;
+		height: 99%;
+		font-size: 99% auto;
+	}
+	.down{
+		border-radius: 50px;
+		height: 40px;
+		width: 99%;
+		position: fixed;
+		z-index: 2;
+		margin: 0;
+	}
+	.down.pcolor1{
+		background-color: rgba(255, 165, 0, 1.0);
+		color: lightyellow;
+	}
+	.down.pcolor2{
+		background-color: rgba(100, 149, 237, 0.7);
+		color: lightcyan;
+	}
+	.down .logo{
+		object-fit: cover; 
+		padding: 5px;
+		background-image: linear-gradient(to top,mistyrose,ghostwhite,mistyrose);
+		border-radius: 50px 0 0 50px;
+		position: relative;
+		height: 28px;
+		width: 80px;
+		z-index: 2;
+	}
+	.down.pcolor1 .logo{
+		border: solid 1px orangered;
+	}
+	.down.pcolor2 .logo{
+		border: solid 1px cornflowerblue;
+	}
+	.down .titulo{
+		position: absolute;
+		font-family: Comic Sans MS;
+		height: 40px;
+		top: 5px;
+		left: 200px;
+		z-index: 2;
+	}
+	.down .titulo h3{
+		margin: 0;
+	}
+	.down .titulo #descripcion{
+		display: none;
+	}
+	.down .menu{
+		border-radius: 0 100px 0 100px;
+		height: 38px;
+		width: 45%;
+		right: 50px;
+		top: 0px;
+		position: absolute;
+		z-index: 2;
+	}
+	.down.pcolor1 .menu{
+		background-color: oldlace;
+		border: solid 1px orange;
+	}
+	.down.pcolor2 .menu{
+		background-color: azure;
+		border: solid 1px cornflowerblue;
+	}
+	.down label{
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.down.pcolor1 label{
+		color: orangered;
+	}
+	.down.pcolor2 label{
+		color: cornflowerblue;
+	}
+	.menu ul{
+		list-style: none;
+		text-align: right;
+		margin: 50px 10px 5px 50px;
+		padding: 0;
+	}
+	.menu ul li{
+		display: inline-block;
+	}
+	.menu ul li a{
+		display: block;
+		padding: 6px;
+		color: white;
+		text-decoration: none;
+	}
+	.menu ul li a:hover{
+		background-color: white;
+		border-radius: 0 20px 0 20px;
+		padding: 6px;
+	}
+	.pcolor1 .menu ul li a:hover{
+		color: orangered;
+	}
+	.pcolor2 .menu ul li a:hover{
+		color: darkblue;
+	}
+	.down .menu ul{
+		position: relative;
+		right: 5px;
+		top: -40px;
+	}
+
+}
+
+/*estilos globales*/
+.dropdown{
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	overflow: auto;
+	width: 150px;
+	background: rgba(265, 165, 0, 0.9);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+.down.pcolor1 .dropdown-content{
+	background: rgba(265, 165, 0, 0.9);
+}
+.down.pcolor2 .dropdown-content{
+	background: rgba(100, 149, 237, 0.9);
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.pagina{
+	width: 99%;
+	height: 1300px;
+	margin: 0% auto;
+	padding: 0%;
+	border: transparent;
+	position: absolute;
+	top: 20%;
+	z-index: 1;
+}
+@keyframes anim{
+    0% {-webkit-text-stroke-color: green;		top: 0; 	left: 0}
+    10% {-webkit-text-stroke-color: blue;		top: 0; 	left: 25%}
+    20% {-webkit-text-stroke-color: blue;		top: 450px; left: 25%} 
+    30% {-webkit-text-stroke-color: transparent;top: 450px; left: 50%}
+    40% {-webkit-text-stroke-color: deeppink;	top: 120px; left: 51%} 
+   	50% {-webkit-text-stroke-color: orangered;	top: 120px; left: 75%}
+   	60% {-webkit-text-stroke-color: transparent;top: 450px; left: 75%} 
+   	70% {-webkit-text-stroke-color: transparent;top: 450px; left: -100%} 
+   	80% {-webkit-text-stroke-color: green;		top: 450px; left: 0} 
+   	90% {-webkit-text-stroke-color: green;		top: 250; left: 0} 
+   	100% {-webkit-text-stroke-color: green;		top: 0; left: 0} 
+}
+.animScroll{
+	font-family: Consolas !important;
+	color: transparent !important;
+	-webkit-text-stroke-width: 1px;
+	position: relative;
+}
+.h1-inactive{
+	-webkit-text-stroke-color: blue;
+}
+.h1-active{
+	animation-name: anim;
+ 	animation-duration: 10s;
+  	animation-iteration-count: infinite;
+}
+.nosotros{
+	position: relative;
+	top: 650px;
+	left: 10px;
+}
+
+/*Carrusel*/
+.container{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 50% !important;
+	left: 50px !important;
+}
+.carousel-inner{
+	background-image: linear-gradient(to top,lightblue,ghostwhite,lightblue);
+	border-radius: 50px;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      height: 300px !important;
+      margin: auto;
+      object-fit: cover;
+  }
+
+.left.carousel-control, .right.carousel-control{
+	background-color: rgba(0, 0, 139, 0.8);
+}
+.carousel-indicators li{
+	background-color: lightblue !important;
+	border: solid 1px darkblue !important;
+}
+.carousel-indicators .active{
+	background-color: rgba(0, 0, 139, 0.8) !important;
+}
+.item h3{
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: blue;
+}
+.item p{
+	font-size: 20px;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+.item p:hover{
+	background-color: rgba(173, 216, 230,0.8);
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black
+}

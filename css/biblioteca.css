@@ -1,0 +1,135 @@
+.background-body{
+	justify-self: center;
+	align-items: center;
+}
+
+@media (max-width: 650px){
+	.hm{
+		display: none;
+	}
+	h1{
+		left: 100px !important;
+	}
+	fieldset{
+	height: 300px;
+	width: 30%;
+	border: solid 5px silver;
+	margin-top: 70px;
+	display: inline-block;
+	}
+	iframe{
+	position: absolute;
+	left: 5%;
+	top: 80px;
+	height: 100%;
+	width: 430px;
+	border: none;
+	border-radius: 40px;
+	padding: 0;
+}
+}
+@media (min-width: 650px){
+	fieldset{
+	height: 300px;
+	width: 30%;
+	border: solid 5px silver;
+	margin-top: 70px;
+	display: inline-block;
+	background-color: azure;
+	}
+	iframe{
+	position: absolute;
+	right: 120px;
+	top: 80px;
+	height: 100%;
+	width: 430px;
+	border: none;
+	border-radius: 40px;
+	padding: 0;
+}
+}
+
+h1 {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-family: Comic Sans MS;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+.menu{
+		background-color: transparent;
+		margin: 0;
+		padding: 0;
+	}
+body{
+	background-image: url("C:/Users/Maria/Desktop/Desarrollo Web/hipermente/assets/img/bibliotecavirtual.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.biblioteca{
+	margin: 0% auto;
+}
+@keyframes anim{
+    0% {color: orangered;}
+   25% {color: deeppink;} 
+   50% {color: darkblue;}
+   75% {color: deeppink;}
+  100% {color: palegreen;}
+}
+.background.iframe{
+	background-image: none;
+}
+button{
+	margin: 40px 0 0 150px;
+	background-color: silver;
+	border: solid 1px silver;
+	height: 40px;
+	width: 80px;
+	border-radius: 20px;
+	color: darkblue;
+}
+button:hover{
+	margin: 40px 0 0 150px;
+	background-color: lightblue;
+	border: solid 1px silver;
+	animation-name: anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+	height: 40px;
+	width: 80px;
+	border-radius: 20px;
+}
+legend{
+	font-family: Book Antiqua;
+	color: silver;
+	font-size: 20px;
+}
+.formulario{
+	display: inline-block;
+	margin: 40px 0 0 20px;
+	font-family: Comic Sans MS;
+	color: teal;
+}
+.element-form{
+	margin: 20px 30px 0 25px;
+	display: inline-flex;
+}
+input{
+	background-color: white;
+	border: solid silver 1px;
+	border-radius: 5px;
+	height: 40px;
+	width: 300px;
+}
+button a{
+	text-decoration: none;
+	color: inherit;
+}
+.foot{
+	text-align: center;
+	margin-top: 20px;
+	font-family: Segoe UI;
+}

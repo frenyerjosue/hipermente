@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HIPERMENTE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="assets/logos/favicon.png">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="color one" id="color">
+	<header class="escritorio pcolor1" id="headerMenu">
+		<div>
+			<img class="logo" id="logo" src="assets/logos/logo-inicio.png" alt="logo">
+		</div>
+		<div class="titulo">
+			<h3>HIPERMENTE</h3>
+			<h5 id="descripcion"><center>Todas lo que necesitas sobre el TDAH</center></h5>
+		</div>
+		<div class="menu">
+			<ul>
+				<li>
+					<div class="dropdown">
+						<label>Inicio</label>
+						<div class="dropdown-content">
+							<a rel="noopener" target="navegacion" href="inicio.html" onclick="scrollTDA()">Sobre el TDAH</a>
+							<a rel="noopener" target="navegacion" href="inicio.html" onclick="scrollNOSOTROS()">¿Quiénes somos?</a>
+							<a rel="noopener" target="navegacion" href="html/jornadas.html">Red de apoyo</a>
+							<a rel="noopener" target="navegacion" href="html/jornadas.html">Sugerencias y Recomendaciones</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown">
+						<label>Diagnóstico</label>
+						<div class="dropdown-content">
+							<a rel="noopener" target="navegacion" href="html/especialistas.html">Realizar Test</a>
+							<a rel="noopener" target="navegacion" href="html/Laboratorio.html">Asistente Virtual</a>
+							<a rel="noopener" target="navegacion" href="html/imagenologia.html">Contactar con un especialista</a>
+						</div>
+					</div>
+				</li>
+				<li> 
+					<div class="dropdown"> 
+						<label>Biblioteca Virtual</label>
+						<div class="dropdown-content">
+							<a rel="noopener" target="_top" href="html/biblioteca.html">Acceder</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<header class="movil" id="movilID">
+		<div>
+			<img class="logo" src="assets/logos/logo-inicio.png" alt="logo">
+		</div>
+		<div class="titulo">
+			<center><h3>HIPERMENTE</h3></center>
+		</div>
+		<div class="dropdown-t">
+			<div class="dropdown-tb">
+				<button onclick="myFunction()" class="drop-button">
+				<img class="menu-movil" src="assets/logos/menu.png" alt="menu">
+				</button>
+				<div id="myDropdown"class="dropdown-content-t">
+					<ol>
+						<a href="#">Inicio</a>
+		   				<a href="#">Diagnóstico</a>
+		    			<a href="#">Biblioteca Virtual</a>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</header>
+		<iframe src="inicio.html" name="navegacion" class="pagina" id="iframe"></iframe>
+</body>
+</html>
